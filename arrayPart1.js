@@ -16,3 +16,16 @@ numbers.sort(function(a, b) {return a - b});
 
 // Print the sorted array in console
 console.log(numbers);
+
+// Q1.3 Insert three numbers (19, 23, 30) and keep the array in ascending
+// order. Different 
+numbers.push(19);
+numbers.unshift(23);
+numbers.splice(8, 0, 30);
+
+// Sort again the array in ascending order
+numbers.sort(function(a, b) {return a - b});
+// Print the sorted array in console
+console.log(numbers);
+
+

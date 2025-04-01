@@ -76,3 +76,54 @@ function sequentialSearch(numbArray, targetNumb) {
 // else {
 //   console.log(`The target was not found: ${indexTarget}`);
 // }
+
+
+// Q1.6 Implement the function "binarySearch" to find an element within the
+// array.
+// The function accepts Two parameter, the array and the value to be searched
+// and it will return a value of the index if the element is found, or -1 if the 
+// element is not found.
+function binarySearch(intArray, targetNum) {
+  let index2 = -1;      // local variable, init as 'not found' value.
+  // local variables pointing the first and the last array position.
+  let start = 0;        
+  let end = intArray.length - 1; 
+                                  
+  while(start <= end) {           // iterate while start not meets end.
+    // local variable pointing the middle of the array
+    let mid = Math.floor((start + end) / 2);
+    // if the element is located at the middle of the array, return the position
+    if(intArray[mid] == targetNum) {
+      index2 = mid;
+      break;
+    }
+    // it looks if the target could be in the first or second half of the array.
+    else if( intArray[mid] < targetNum) {
+      start = mid + 1;                   // set to look into the second half.
+    }
+    else {
+      end = mid - 1;                     // set to look into the first half.
+    }
+  }
+  return index2;                       // returns the position or -1 "not found"
+}
+
+// Example when the target is found:
+// let indexTarget2 = binarySearch(numbers, 23);
+// if(indexTarget2 >= 0) {
+//   console.log(`The target was found in the position ${indexTarget2}: 
+//     numbers[${indexTarget2}]`);
+// }
+// else {
+//   console.log(`The target was not found: ${indexTarget2}`);
+// }
+
+// Example when the target is found:
+// let indexTarget2 = binarySearch(numbers, 50);
+// if(indexTarget2 >= 0) {
+//   console.log(`The target was found in the position ${indexTarget2}: 
+//     numbers[${indexTarget2}]`);
+// }
+// else {
+//   console.log(`The target was not found: ${indexTarget2}`);
+// }

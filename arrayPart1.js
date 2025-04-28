@@ -60,22 +60,22 @@ function sequentialSearch(numbArray, targetNumb) {
 }
 
 // Example when the target is found:
-// let indexTarget = sequentialSearch(numbers, 25);
-// if(indexTarget >= 0) {
-//   console.log(`The target was found in the position ${indexTarget}`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget}`);
-// }
+let indexTarget = sequentialSearch(numbers, 25);
+if(indexTarget >= 0) {
+  console.log(`The target was found in the position ${indexTarget}`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget}`);
+}
 
 // Example when the target is not found:
-// indexTarget = sequentialSearch(numbers, 15);
-// if(indexTarget >= 0) {
-//   console.log(`The target was found in the position ${indexTarget}`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget}`);
-// }
+indexTarget = sequentialSearch(numbers, 15);
+if(indexTarget >= 0) {
+  console.log(`The target was found in the position ${indexTarget}`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget}`);
+}
 
 
 // Q1.6 Implement the function "binarySearch" to find an element within the
@@ -109,21 +109,21 @@ function binarySearch(intArray, targetNum) {
 }
 
 // Example when the target is found:
-// let indexTarget2 = binarySearch(numbers, 23);
-// if(indexTarget2 >= 0) {
-//   console.log(`The target was found in the position ${indexTarget2}: 
-//     numbers[${indexTarget2}]`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget2}`);
-// }
+let indexTarget2 = binarySearch(numbers, 23);
+if(indexTarget2 >= 0) {
+  console.log(`The target was found in the position ${indexTarget2}: 
+    numbers[${indexTarget2}]`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget2}`);
+}
 
 // Example when the target is not found:
-// indexTarget2 = binarySearch(numbers, 50);
-// if(indexTarget2 >= 0) {
-//   console.log(`The target was found in the position ${indexTarget2}: 
-//     numbers[${indexTarget2}]`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget2}`);
-// }
+indexTarget2 = binarySearch(numbers, 50);
+if(indexTarget2 >= 0) {
+  console.log(`The target was found in the position ${indexTarget2}: 
+    numbers[${indexTarget2}]`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget2}`);
+}

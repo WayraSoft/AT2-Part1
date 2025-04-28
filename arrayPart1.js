@@ -51,7 +51,7 @@ function sequentialSearch(numbArray, targetNumb) {
   let index = -1;      // local variable, init as 'not found' value.
   for(let i = 0; i < numbArray.length; i++) {
     // it loops through every element of the array and compares values.
-    if(numbArray[i] == targetNumb) {
+    if(numbArray[i] === targetNumb) {
       index = i;
       break;
     }
@@ -60,29 +60,29 @@ function sequentialSearch(numbArray, targetNumb) {
 }
 
 // Example when the target is found:
-// let indexTarget = sequentialSearch(numbers, 25);
-// if(indexTarget >= 0) {
-//   console.log(`The target was found in the position ${indexTarget}`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget}`);
-// }
+let indexTarget = sequentialSearch(numbers, 25);
+if(indexTarget >= 0) {
+  console.log(`The target was found in the position ${indexTarget}`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget}`);
+}
 
 // Example when the target is not found:
-// let indexTarget = sequentialSearch(numbers, 15);
-// if(indexTarget >= 0) {
-//   console.log(`The target was found in the position ${indexTarget}`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget}`);
-// }
+indexTarget = sequentialSearch(numbers, 15);
+if(indexTarget >= 0) {
+  console.log(`The target was found in the position ${indexTarget}`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget}`);
+}
 
 
 // Q1.6 Implement the function "binarySearch" to find an element within the
 // array.
 // The function accepts Two parameter, the array and the value to be searched
-// and it will return a value of the index if the element is found, or -1 if the 
-// element is not found.
+// and it will return a value of the index if the element is found, or -1 if the element is not found.
+
 function binarySearch(intArray, targetNum) {
   let index2 = -1;      // local variable, init as 'not found' value.
   // local variables pointing the first and the last array position.
@@ -93,7 +93,7 @@ function binarySearch(intArray, targetNum) {
     // local variable pointing the middle of the array
     let mid = Math.floor((start + end) / 2);
     // if the element is located at the middle of the array, return the position
-    if(intArray[mid] == targetNum) {
+    if(intArray[mid] === targetNum) {
       index2 = mid;
       break;
     }
@@ -109,21 +109,21 @@ function binarySearch(intArray, targetNum) {
 }
 
 // Example when the target is found:
-// let indexTarget2 = binarySearch(numbers, 23);
-// if(indexTarget2 >= 0) {
-//   console.log(`The target was found in the position ${indexTarget2}: 
-//     numbers[${indexTarget2}]`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget2}`);
-// }
+let indexTarget2 = binarySearch(numbers, 23);
+if(indexTarget2 >= 0) {
+  console.log(`The target was found in the position ${indexTarget2}: 
+    numbers[${indexTarget2}]`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget2}`);
+}
 
-// Example when the target is found:
-// let indexTarget2 = binarySearch(numbers, 50);
-// if(indexTarget2 >= 0) {
-//   console.log(`The target was found in the position ${indexTarget2}: 
-//     numbers[${indexTarget2}]`);
-// }
-// else {
-//   console.log(`The target was not found: ${indexTarget2}`);
-// }
+// Example when the target is not found:
+indexTarget2 = binarySearch(numbers, 50);
+if(indexTarget2 >= 0) {
+  console.log(`The target was found in the position ${indexTarget2}: 
+    numbers[${indexTarget2}]`);
+}
+else {
+  console.log(`The target was not found: ${indexTarget2}`);
+}
